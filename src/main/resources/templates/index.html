@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Scientific Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #667eea, #764ba2);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .calculator {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .calculator h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            color: #555;
+        }
+        /* Remove arrows in Chrome, Edge, Safari */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrows in Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            background: #f3f4f6;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+<div class="calculator">
+    <h2>Scientific Calculator</h2>
+
+    <form method="post" action="/calculate">
+
+        <label>Enter Value (a)</label>
+        <input type="number" step="any" name="a" required
+               onwheel="this.blur();">
+
+
+
+
+        <label>Enter Value (b) [Only for Power]</label>
+        <input type="number" step="any" name="b"
+               onwheel="this.blur();">
+
+        <label>Select Operation</label>
+        <select name="operation">
+            <option value="sqrt">Square Root (√a)</option>
+            <option value="fact">Factorial (a!)</option>
+            <option value="ln">Natural Log (ln a)</option>
+            <option value="pow">Power (aᵇ)</option>
+        </select>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result" th:if="${result != null}">
+        Result: <span th:text="${result}"></span>
+    </div>
+
+
+</div>
+</body>
+</html>
