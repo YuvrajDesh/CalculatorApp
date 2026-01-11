@@ -16,6 +16,11 @@ pipeline {
                 sh 'mvn clean test package'
             }
         }
+         stage('Docker Build') {
+                    steps {
+                        sh 'docker build -t calculator-app:ci .'
+                    }
+                }
     }
 
     post {
