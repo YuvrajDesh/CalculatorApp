@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+  filebeat.yml: |
+    filebeat.inputs:
+    - type: container
+      paths:
+        - /var/log/containers/*.log
+
+    output.elasticsearch:
+      hosts: ["http://elasticsearch:9200"]
+kind: ConfigMap
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"filebeat.yml":"filebeat.inputs:\n- type: container\n  paths:\n    - /var/log/containers/*.log\n\noutput.elasticsearch:\n  hosts: [\"http://elasticsearch:9200\"]\n"},"kind":"ConfigMap","metadata":{"annotations":{},"name":"filebeat-config","namespace":"default"}}
+  creationTimestamp: "2026-01-10T06:48:24Z"
+  name: filebeat-config
+  namespace: default
+  resourceVersion: "16966"
+  uid: 9d794b81-22c3-4d3b-998e-98eeab38d51a

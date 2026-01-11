@@ -18,6 +18,8 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
+                // This line will print every file in the folder to the Jenkins log
+
                 sh '/usr/local/bin/docker build -t calculator-app:ci .'
             }
         }
