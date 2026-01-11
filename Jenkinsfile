@@ -16,13 +16,12 @@ pipeline {
                 sh 'mvn clean test package'
             }
         }
-         stage('Docker Build') {
+        stage('Docker Build') {
             steps {
-                 sh 'docker build -t calculator-app:local .'
-                  // This forces the running container to update to the new image
-                 sh 'docker-compose up -d --no-deps calculator-app'
-                    }
-                }
+                sh '/usr/local/bin/docker build -t calculator-app:ci .'
+            }
+        }
+
     }
 
     post {
