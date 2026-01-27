@@ -1,4 +1,10 @@
-2026-01-12T03:06:07.094Z  INFO 1 --- [http-nio-8080-exec-7] org.example.CalculatorService            : Calculating square root of 4242.0: result = 65.13063795173512
-2026-01-12T03:06:11.763Z  INFO 1 --- [http-nio-8080-exec-2] org.example.CalculatorService            : Calculating square root of 4242.0: result = 65.13063795173512
-2026-01-12T03:15:53.428Z  INFO 1 --- [http-nio-8080-exec-9] org.example.CalculatorService            : Calculating square root of 334.0: result = 18.275666882497067
-2026-01-12T03:16:02.335Z  INFO 1 --- [http-nio-8080-exec-1] org.example.CalculatorService            : Calculating 45.0 raised to the power of 2.0: result = 2025.0
+2026-01-27T06:16:40.035Z  INFO 1 --- [main] org.example.CalculatorApplication        : Starting CalculatorApplication using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2026-01-27T06:16:40.050Z  INFO 1 --- [main] org.example.CalculatorApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-01-27T06:16:43.227Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-01-27T06:16:43.285Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-01-27T06:16:43.288Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-01-27T06:16:44.174Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-01-27T06:16:44.186Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3946 ms
+2026-01-27T06:16:44.776Z  INFO 1 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-01-27T06:16:45.716Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-01-27T06:16:45.842Z  INFO 1 --- [main] org.example.CalculatorApplication        : Started CalculatorApplication in 6.678 seconds (process running for 7.869)
