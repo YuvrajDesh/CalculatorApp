@@ -1,10 +1,13 @@
-2026-01-27T06:16:40.035Z  INFO 1 --- [main] org.example.CalculatorApplication        : Starting CalculatorApplication using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
-2026-01-27T06:16:40.050Z  INFO 1 --- [main] org.example.CalculatorApplication        : No active profile set, falling back to 1 default profile: "default"
-2026-01-27T06:16:43.227Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-01-27T06:16:43.285Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-01-27T06:16:43.288Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2026-01-27T06:16:44.174Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-01-27T06:16:44.186Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3946 ms
-2026-01-27T06:16:44.776Z  INFO 1 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2026-01-27T06:16:45.716Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-2026-01-27T06:16:45.842Z  INFO 1 --- [main] org.example.CalculatorApplication        : Started CalculatorApplication in 6.678 seconds (process running for 7.869)
+2026-03-07T05:45:11.192Z  INFO 1 --- [main] org.example.CalculatorApplication        : Starting CalculatorApplication using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+2026-03-07T05:45:11.222Z  INFO 1 --- [main] org.example.CalculatorApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-03-07T05:45:11.839Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-07T05:45:11.852Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-07T05:45:11.852Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2026-03-07T05:45:11.880Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-07T05:45:11.881Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2026-03-07T05:45:11.944Z  INFO 1 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-07T05:45:12.135Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-03-07T05:45:12.162Z  INFO 1 --- [main] org.example.CalculatorApplication        : Started CalculatorApplication in 1.342 seconds (process running for 1.807)
+2026-03-07T05:47:01.237Z  INFO 1 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-07T05:47:01.240Z  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-07T05:47:01.244Z  INFO 1 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
