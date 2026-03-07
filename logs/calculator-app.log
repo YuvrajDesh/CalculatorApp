@@ -1,4 +1,4 @@
-2026-03-07T05:45:11.192Z  INFO 1 --- [main] org.example.CalculatorApplication        : Starting CalculatorApplication using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
+docker-compose -f docker-compose-elk.yml up -ddocker-compose -f docker-compose-elk.yml up -d2026-03-07T05:45:11.192Z  INFO 1 --- [main] org.example.CalculatorApplication        : Starting CalculatorApplication using Java 17.0.17 with PID 1 (/app/app.jar started by root in /app)
 2026-03-07T05:45:11.222Z  INFO 1 --- [main] org.example.CalculatorApplication        : No active profile set, falling back to 1 default profile: "default"
 2026-03-07T05:45:11.839Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
 2026-03-07T05:45:11.852Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
