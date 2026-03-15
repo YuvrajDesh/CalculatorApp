@@ -39,12 +39,16 @@ pipeline {
     }
 
     post {
-        success {
-            echo 'CI Pipeline executed successfully!'
+            success {
+                mail to: 'yuvrajdeshmukh8998@gmail.com',
+                     subject: "Success: Build ${env.BUILD_NUMBER}",
+                     body: "The pipeline ${env.JOB_NAME} completed successfully! Check the console output here: ${env.BUILD_URL}"
+            }
+            failure {
+                mail to: 'yuvrajdeshmukh8998@gmail.com',
+                     subject: "Failed: Build ${env.BUILD_NUMBER}",
+                     body: "The pipeline ${env.JOB_NAME} failed. Check the console output here: ${env.BUILD_URL}"
+            }
         }
-        failure {
-            echo 'CI Pipeline failed!'
-        }
-    }
 }
 
