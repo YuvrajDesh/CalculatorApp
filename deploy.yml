@@ -2,7 +2,7 @@
   hosts: webservers
   tasks:
     - name: Pull latest image from Docker Hub
-      shell: docker pull your-dockerhub-username/calculator-app:latest
+      shell: docker pull yuvraj12345678/calculator-app:latest
 
     - name: Stop existing container
       shell: docker stop calculator-app || true
@@ -15,4 +15,4 @@
         docker run -d --name calculator-app 
         -p 8080:8080 
         -v /var/log/calculator:/logs 
-        your-dockerhub-username/calculator-app:latest
+        yuvraj12345678/calculator-app:latest
