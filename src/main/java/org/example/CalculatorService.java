@@ -19,6 +19,7 @@ public class CalculatorService {
     public long factorial(int n) {
         logger.info("Calculating factorial for n = {}", n);
         long f = 1;
+        //Factorial
         for (int i = 1; i <= n; i++) f *= i;
         logger.info("Factorial of {} is {}", n, f);
         return f;
