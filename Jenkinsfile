@@ -31,7 +31,8 @@ pipeline {
         stage('Deploy with Ansible') {
                     steps {
                         // Now run the playbook that you just pushed to GitHub
-                        sh 'ansible-playbook -i inventory.ini deploy.yml'
+                        sh '/opt/homebrew/bin/ansible-playbook -i inventory.ini deploy.yml'
+
                     }
                 }
 
