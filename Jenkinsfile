@@ -3,6 +3,11 @@ pipeline {
     tools {
         maven 'Maven'
     }
+    // This tells Jenkins to listen for GitHub Webhook signals
+        triggers {
+            githubPush()
+        }
+
     stages {
         stage('Checkout') {
             steps {
