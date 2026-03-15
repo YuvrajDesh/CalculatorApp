@@ -1,0 +1,18 @@
+- name: Deploy Calculator App
+  hosts: webservers
+  tasks:
+    - name: Pull latest image from Docker Hub
+      shell: docker pull your-dockerhub-username/calculator-app:latest
+
+    - name: Stop existing container
+      shell: docker stop calculator-app || true
+
+    - name: Remove existing container
+      shell: docker rm calculator-app || true
+
+    - name: Run new container
+      shell: >
+        docker run -d --name calculator-app 
+        -p 8080:8080 
+        -v /var/log/calculator:/logs 
+        your-dockerhub-username/calculator-app:latest

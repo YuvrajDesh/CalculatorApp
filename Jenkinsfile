@@ -28,6 +28,12 @@ pipeline {
                 sh '/usr/local/bin/docker build -t calculator-app:ci .'
             }
         }
+        stage('Deploy with Ansible') {
+                    steps {
+                        // Now run the playbook that you just pushed to GitHub
+                        sh 'ansible-playbook -i inventory.ini deploy.yml'
+                    }
+                }
 
     }
 
