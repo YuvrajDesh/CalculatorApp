@@ -1,5 +1,5 @@
 - name: Deploy Calculator App
-  hosts: webservers
+  hosts: local
   tasks:
     - name: Pull latest image from Docker Hub
       shell: docker pull yuvraj12345678/calculator-app:latest
